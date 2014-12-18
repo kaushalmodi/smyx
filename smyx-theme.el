@@ -51,7 +51,7 @@
       (smyx-bg+3 "#585858")
 
       (smyx-red+1 "#992222")
-     (smyx-red "#FAB1AB")
+      (smyx-red "#FAB1AB")
       (smyx-red-1 "#FAB1AB")
       (smyx-red-2 "#FAB1AB")
       (smyx-red-3 "#FAB1AB")
@@ -81,16 +81,16 @@
       (smyx-green+2 "#9fc59f")
       (smyx-green+3 "#afd8af")
       (smyx-green+4 "#bfebbf")
-      (smyx-green-blue-org "#BBFFD1")   
+      (smyx-green-blue-org "#BBFFD1")
 
 
       (smyx-cyan "#96D9F1")
       (smyx-blue+1 "#94bff3")
-      (smyx-blue "#96D9F1")   
+      (smyx-blue "#96D9F1")
       (smyx-blue-1 "#7b68ee")
-      (smyx-blue-2 "#6a5acd") 
-      (smyx-blue-3 "#add8e6") 
-      (smyx-blue-4 "#b2dfee") 
+      (smyx-blue-2 "#6a5acd")
+      (smyx-blue-3 "#add8e6")
+      (smyx-blue-4 "#b2dfee")
       (smyx-blue-5 "#96D9F1")
       (smyx-blue-6 "#96D9F1")
       (smyx-blue-7 "#00ffff")
@@ -116,7 +116,7 @@
       (smyx-white-2 "#F8F8F8")
       (smyx-white-3 "#fffafa"))
 
- (custom-theme-set-faces
+  (custom-theme-set-faces
    'smyx
    '(button ((t (:underline t))))
    `(link ((,class (:foreground ,smyx-yellow :underline t :weight bold))))
@@ -139,7 +139,7 @@
 
    ;;; highlight current line
    `(hl-line ((,class (:background ,smyx-bg+2))))
-   
+
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,smyx-blue))))
    `(compilation-enter-directory-face ((,class (:foreground ,smyx-blue))))
@@ -186,7 +186,7 @@
    `(mode-line-inactive
      ((,class (:foreground ,smyx-gray-7
                            :background ,smyx-gray-6))))
-   
+
    `(region ((,class (:background ,smyx-black-3))))
    `(secondary-selection ((,class (:background ,smyx-bg+2))))
    `(trailing-whitespace ((,class (:background ,smyx-red))))
@@ -195,7 +195,7 @@
    ;;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,smyx-orange))))
    `(font-lock-comment-face ((,class (:foreground ,smyx-gray-9 :italic t))))
-   ;; `(font-lock-comment-delimiter-face ((,class (:foreground ,smyx-green)))) 
+   ;; `(font-lock-comment-delimiter-face ((,class (:foreground ,smyx-green))))
    `(font-lock-constant-face ((,class (:foreground ,smyx-red))))
    ;; `(font-lock-doc-face ((,class (:foreground ,smyx-green+0))))
    `(font-lock-doc-string-face ((,class (:foreground ,smyx-yellow))))
@@ -207,7 +207,7 @@
    `(font-lock-type-face ((,class (:foreground ,smyx-blue))))
 
    `(font-lock-variable-name-face ((,class (:foreground ,smyx-blue))))
-   `(font-lock-warning-face ((,class (:foreground ,smyx-pink))))
+   `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
    `(font-lock-reference-face ((,class (:foreground ,smyx-gray))))
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,smyx-yellow))))
    `(font-lock-regexp-grouping-construct ((,class (:foreground ,smyx-red))))
@@ -216,7 +216,7 @@
    `(c-annotation-face ((,class (:inherit font-lock-constant-face))))
 
    `(gui-element ((,class (:background ,smyx-gray-5 :foreground ,smyx-blue-6))))
-   
+
 
    ;;; newsticker
    ;; These are currently placeholders that probably look terrible.
@@ -325,8 +325,8 @@
    `(flymake-warnline ((,class (:foreground ,smyx-orange :weight bold :underline t))))
 
    ;; flyspell
-   `(flyspell-duplicate ((,class (:foreground ,smyx-yellow :weight bold :underline t))))
-   `(flyspell-incorrect ((,class (:foreground ,smyx-orange :weight bold :underline t))))
+   `(flyspell-duplicate ((,class (:underline (:style wave :color ,smyx-yellow) :inherit nil))))
+   `(flyspell-incorrect ((,class (:underline (:style wave :color ,smyx-red) :inherit nil))))
 
    ;; erc
    `(erc-action-face ((,class (:inherit erc-default-face))))
@@ -476,7 +476,7 @@
    `(magit-log-head-label-remote  ((,class (:background ,smyx-bg :foreground ,smyx-yellow))))
    `(magit-log-head-label-tags    ((,class (:background ,smyx-bg :foreground ,smyx-yellow))))
    `(magit-log-head-label-local    ((,class (:background ,smyx-bg :foreground ,smyx-blue))))
- 
+
 
    `(magit-diff-add ((,class (:foreground ,smyx-green))))
    `(magit-diff-del ((,class (:foreground ,smyx-red))))
@@ -555,7 +555,7 @@
      ((,class (:inherit font-lock-comment-face))))
    `(org-archived ((,class (:slant italic))))
    `(org-checkbox ((,class (:background ,smyx-gray-2 :foreground ,smyx-white
-                                   :box (:line-width 1 :style released-button)))))
+                                        :box (:line-width 1 :style released-button)))))
    `(org-date ((,class (:foreground ,smyx-green))))
    `(org-done ((,class (:bold t :weight bold :foreground ,smyx-green-1
                               :box (:line-width 1 :style none)))))
@@ -576,10 +576,10 @@
    `(org-column ((,class (:background ,smyx-yellow :foreground ,smyx-black))))
    `(org-column-title ((,class (:background ,smyx-bg-1 :weight bold))))
    `(org-block ((,class (:foreground ,smyx-fg :background ,smyx-bg-05))))
-   `(org-block-begin-line 
+   `(org-block-begin-line
      ((,class (:foreground "#008ED1" :background ,smyx-bg-1))))
    `(org-block-background ((,class (:background ,smyx-bg-05))))
-   `(org-block-end-line 
+   `(org-block-end-line
      ((,class (:foreground "#008ED1" :background ,smyx-bg-1))))
    `(org-hide ((,class (:foreground ,smyx-bg)))) ;; hide leading stars
    `(org-headline-done ((,class (:foreground ,smyx-green-1))))
@@ -652,13 +652,13 @@
    ;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,smyx-red))))
 
-  ;; elscreen
-     `(elscreen-tab-other-screen-face (
-        (,class (:foreground ,smyx-gray :background ,smyx-black))))
+   ;; elscreen
+   `(elscreen-tab-other-screen-face (
+                                     (,class (:foreground ,smyx-gray :background ,smyx-black))))
 
-     `(elscreen-tab-current-screen-face (
-        (,class (:foreground ,smyx-gray-5 :background ,smyx-gray))))
-    
+   `(elscreen-tab-current-screen-face (
+                                       (,class (:foreground ,smyx-gray-5 :background ,smyx-gray))))
+
 
   ;;; ansi-term
    `(term-color-black ((,class (:foreground ,smyx-bg
@@ -718,7 +718,7 @@
    `(wl-highlight-message-unimportant-header-contents ((,class (:foreground ,smyx-fg))))
    `(wl-highlight-summary-answered-face ((,class (:foreground ,smyx-blue))))
    `(wl-highlight-summary-disposed-face ((,class (:foreground ,smyx-fg
-                                                         :slant italic))))
+                                                              :slant italic))))
    `(wl-highlight-summary-new-face ((,class (:foreground ,smyx-blue))))
    `(wl-highlight-summary-normal-face ((,class (:foreground ,smyx-fg))))
    `(wl-highlight-summary-thread-top-face ((,class (:foreground ,smyx-yellow))))
@@ -754,7 +754,7 @@
   (custom-theme-set-variables
    'smyx
    `(ansi-color-names-vector [,smyx-bg ,smyx-red-2 ,smyx-green ,smyx-orange
-                                          ,smyx-blue-1 ,smyx-magenta ,smyx-cyan ,smyx-fg])
+                                       ,smyx-blue-1 ,smyx-magenta ,smyx-cyan ,smyx-fg])
    ;; fill-column-indicator
    `(fci-rule-color ,smyx-bg-05)))
 
