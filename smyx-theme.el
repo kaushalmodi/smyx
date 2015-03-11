@@ -101,7 +101,7 @@
       (smyx-black "#282828")
       (smyx-black-2 "#353535")
       (smyx-black-3 "#414141")
-      (smyx-black-3 "#515151")
+      (smyx-black-4 "#515151")
 
       (smyx-gray "#d3d3d3")
       (smyx-gray-2 "#8B8989")
@@ -468,7 +468,7 @@
    ;; magit
    `(magit-section-title ((,class (:foreground ,smyx-green))))
    `(magit-branch ((,class (:foreground ,smyx-blue))))
-   `(magit-item-highlight ((,class (:background ,smyx-black-3))))
+   `(magit-item-highlight ((,class (:background ,smyx-black-4))))
    `(magit-log-sha1 ((,class (:foreground ,smyx-blue))))
    `(magit-log-author ((,class (:foreground ,smyx-green))))
    `(magit-log-head-label-default ((,class (:background ,smyx-bg :foreground ,smyx-green))))
