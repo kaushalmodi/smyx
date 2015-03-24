@@ -128,13 +128,13 @@
    `(buffers-tab ((,class (:background ,smyx-black-2 :foreground ,smyx-white-2))))
 
    ;;; basic coloring
-   `(default ((,class (:foreground ,smyx-fg :background ,smyx-black))))
+   `(default ((,class (:foreground ,smyx-fg :background ,smyx-bg))))
    `(cursor ((,class (:background ,smyx-fg))))
    `(escape-glyph-face ((,class (:foreground ,smyx-red))))
-   ;; `(fringe ((,class (:foreground ,smyx-fg :background ,smyx-bg+1))))
+   `(fringe ((,class (:foreground ,smyx-fg :background ,smyx-bg))))
    `(header-line ((,class (:foreground ,smyx-yellow
-                                       :background ,smyx-bg-1
-                                       :box (:line-width -1 :style released-button)))))
+                           :background ,smyx-bg-1
+                           :box (:line-width -1 :style released-button)))))
    `(highlight ((,class (:background ,smyx-gray-7))))
 
    ;;; highlight current line
@@ -181,12 +181,12 @@
    `(minibuffer-prompt ((,class (:foreground ,smyx-green+1 :background ,smyx-black))))
    `(mode-line
      ((,class (:foreground ,smyx-blue ;;; dominant
-                           :background ,smyx-black-2))))
+               :background ,smyx-black-2))))
    ;; `(mode-line-buffer-id ((,class (:foreground ,smyx-yellow :weight bold))))
 
    `(mode-line-inactive
      ((,class (:foreground ,smyx-gray-7
-                           :background ,smyx-gray-6))))
+               :background ,smyx-gray-6))))
 
    `(region ((,class (:background ,smyx-black-3))))
    `(secondary-selection ((,class (:background ,smyx-bg+2))))
@@ -415,15 +415,15 @@
    ;; helm
    `(helm-header
      ((,class (:foreground ,smyx-green
-                           :background ,smyx-bg
-                           :underline nil
-                           :box nil))))
+               :background ,smyx-bg
+               :underline nil
+               :box nil))))
    `(helm-source-header
      ((,class (:foreground ,smyx-yellow
-                           :background ,smyx-bg-1
-                           :underline nil
-                           :weight bold
-                           :box (:line-width -1 :style released-button)))))
+               :background ,smyx-bg-1
+               :underline nil
+               :weight bold
+               :box (:line-width -1 :style released-button)))))
    `(helm-selection ((,class (:background ,smyx-bg+1 :underline nil))))
    `(helm-selection-line ((,class (:background ,smyx-bg+1))))
    `(helm-visible-mark ((,class (:foreground ,smyx-bg :background ,smyx-yellow-2))))
@@ -556,12 +556,12 @@
      ((,class (:inherit font-lock-comment-face))))
    `(org-archived ((,class (:slant italic))))
    `(org-checkbox ((,class (:background ,smyx-gray-2 :foreground ,smyx-white
-                                        :box (:line-width 1 :style released-button)))))
+                            :box (:line-width 1 :style released-button)))))
    `(org-date ((,class (:foreground ,smyx-green))))
    `(org-done ((,class (:bold t :weight bold :foreground ,smyx-green-1
-                              :box (:line-width 1 :style none)))))
+                        :box (:line-width 1 :style none)))))
    `(org-todo ((,class (:bold t :foreground ,smyx-yellow-org-todo :weight bold
-                              :box (:line-width 1 :style none)))))
+                        :box (:line-width 1 :style none)))))
 
    `(org-level-1 ((,class (:foreground ,smyx-blue ))))
    `(org-level-2 ((,class (:foreground ,smyx-green ))))
@@ -663,21 +663,21 @@
 
   ;;; ansi-term
    `(term-color-black ((,class (:foreground ,smyx-bg
-                                            :background ,smyx-bg-1))))
+                                :background ,smyx-bg-1))))
    `(term-color-red ((,class (:foreground ,smyx-red-2
-                                          :background ,smyx-red-4))))
+                              :background ,smyx-red-4))))
    `(term-color-green ((,class (:foreground ,smyx-green
-                                            :background ,smyx-green+2))))
+                                :background ,smyx-green+2))))
    `(term-color-yellow ((,class (:foreground ,smyx-orange
-                                             :background ,smyx-yellow))))
+                                 :background ,smyx-yellow))))
    `(term-color-blue ((,class (:foreground ,smyx-blue-1
-                                           :background ,smyx-blue-4))))
+                               :background ,smyx-blue-4))))
    `(term-color-magenta ((,class (:foreground ,smyx-magenta
-                                              :background ,smyx-red))))
+                                  :background ,smyx-red))))
    `(term-color-cyan ((,class (:foreground ,smyx-cyan
-                                           :background ,smyx-blue))))
+                               :background ,smyx-blue))))
    `(term-color-white ((,class (:foreground ,smyx-fg
-                                            :background ,smyx-bg-1))))
+                                :background ,smyx-bg-1))))
    `(term-default-fg-color ((,class (:inherit term-color-white))))
    `(term-default-bg-color ((,class (:inherit term-color-black))))
 
@@ -719,7 +719,7 @@
    `(wl-highlight-message-unimportant-header-contents ((,class (:foreground ,smyx-fg))))
    `(wl-highlight-summary-answered-face ((,class (:foreground ,smyx-blue))))
    `(wl-highlight-summary-disposed-face ((,class (:foreground ,smyx-fg
-                                                              :slant italic))))
+                                                  :slant italic))))
    `(wl-highlight-summary-new-face ((,class (:foreground ,smyx-blue))))
    `(wl-highlight-summary-normal-face ((,class (:foreground ,smyx-fg))))
    `(wl-highlight-summary-thread-top-face ((,class (:foreground ,smyx-yellow))))
