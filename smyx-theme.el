@@ -135,7 +135,8 @@
    `(header-line ((,class (:foreground ,smyx-yellow
                            :background ,smyx-bg-1
                            :box (:line-width -1 :style released-button)))))
-   `(highlight ((,class (:background ,smyx-gray-7))))
+   ;; `(highlight ((,class (:background ,smyx-gray-7))))
+   `(highlight ((,class (:background "wheat4"))))
 
    ;;; highlight current line
    `(hl-line ((,class (:background ,smyx-bg+2))))
@@ -158,7 +159,8 @@
    `(grep-error-face ((,class (:foreground ,smyx-red :weight bold :underline t))))
    `(grep-hit-face ((,class (:foreground ,smyx-black :background ,smyx-red))))
    `(grep-match-face ((,class (:foreground ,smyx-black :background ,smyx-pink-1))))
-   `(match ((,class (:background ,smyx-gray-5 :weight bold))))
+   `(match ((,class (:foreground ,smyx-black :background ,smyx-orange :weight bold))))
+   ;; `(match ((,class (:background ,smyx-gray-5 :weight bold))))
    ;; `(match ((,class (:background ,smyx-black :foreground ,smyx-pink-1))))
 
 
