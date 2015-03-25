@@ -63,7 +63,7 @@
       (smyx-pink-2           "#CB88D7")
 
       (smyx-orange-2         "#FFBB00")
-      (smyx-orange-1         "#F0AA00") ;; DarkOrange
+      (smyx-orange-1         "#F0AA00")
       (smyx-orange           "#FFA600")
 
       (smyx-yellow           "#F6DC69")
@@ -164,11 +164,11 @@
    `(mc/cursor-face ((,class (:inverse-video nil, :background ,smyx-pink :foreground ,smyx-black))))
 
 ;;; isearch
-   `(isearch ((,class (:foreground ,smyx-black :background ,smyx-green))))
+   ;; `(isearch ((,class (:foreground ,smyx-black :background ,smyx-green))))
+   `(isearch ((,class (:weight bold :foreground nil :background ,smyx-green))))
    `(isearch-fail ((,class (:foreground ,smyx-black :background ,smyx-pink))))
-
-   `(lazy-highlight ((,class (:foreground ,smyx-black :background ,smyx-yellow))))
-   `(query-replace ((,class (:background ,smyx-gray-5))))
+   `(lazy-highlight ((,class (:foreground nil :background ,smyx-yellow))))
+   `(query-replace ((,class (:weight bold :foreground nil :background ,smyx-blue-2))))
    `(Highline-face ((,class (:background ,smyx-green))))
    `(italic ((,class (nil))))
    `(left-margin ((,class (nil))))
@@ -458,7 +458,7 @@
    `(jabber-title-large ((,class (:height 1.3 :weight bold))))
 
 ;;; linum-mode
-   `(linum ((,class (:foreground ,smyx-gray-9 :background ,smyx-bg))))
+   `(linum ((,class (:height 0.9 :foreground ,smyx-gray-9 :background ,smyx-bg))))
 
 ;;; magit
    `(magit-section-title ((,class (:foreground ,smyx-green))))
@@ -751,8 +751,7 @@
    `(ansi-color-names-vector [,smyx-bg ,smyx-red-2 ,smyx-green ,smyx-orange
                                        ,smyx-blue-1 ,smyx-magenta ,smyx-cyan ,smyx-fg])
    ;; fill-column-indicator
-   `(fci-rule-color ,smyx-bg-05)))
-
+   `(fci-rule-color ,smyx-bg+3)))
 
 ;;;###autoload
 (when load-file-name
@@ -766,7 +765,7 @@
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
-;; eval: (when (fboundp 'aggressive-indent) (aggressive-indent-mode -1))
+;; eval: (when (featurep 'aggressive-indent) (aggressive-indent-mode -1))
 ;; End:
 
 ;;;; smyx-theme.el ends here.
