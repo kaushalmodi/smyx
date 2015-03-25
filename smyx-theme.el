@@ -1,4 +1,4 @@
-;;; smyx-theme.el --- smyx Color Theme
+;;;; smyx-theme.el --- smyx Color Theme
 
 ;; Copyright 2012-2014, Uriel G Maldonado
 
@@ -22,11 +22,11 @@
 ;; Boston, MA 02111-1307, USA.
 ;;
 
-;;; Commentary:
-;;; This theme is based on smyck created by hukl.
-;;; (https://github.com/hukl/Smyck-Color-Scheme)
-;;; The cyberpunk theme was used as a starting point for smyx which was
-;;; created by Nicholas M. Van Horn.
+;;;; Commentary:
+;; This theme is based on smyck created by hukl.
+;; (https://github.com/hukl/Smyck-Color-Scheme)
+;; The cyberpunk theme was used as a starting point for smyx which was
+;; created by Nicholas M. Van Horn.
 
 ;; This theme is a port of the overtone/emacs-live theme of the same name
 ;; (https://github.com/overtone/emacs-live). The original theme was
@@ -35,86 +35,86 @@
 ;; theme strives to offer as many mode-specific customizations as
 ;; possible, with further tweaks that suit my fancy.
 
-;;; Code:
+;;;; Code:
 
 (deftheme smyx "The smyx color theme")
 
 (let ((class '((class color) (min-colors 89)))
       ;; smyx palette
-      (smyx-fg "#F7F7F7")
+      (smyx-fg               "#F7F7F7")
 
-      (smyx-bg-05 "#151515")
-      (smyx-bg-1 "#202020")
-      (smyx-bg "#282828")
-      (smyx-bg+1 "#383838")
-      (smyx-bg+2 "#484848")
-      (smyx-bg+3 "#585858")
+      (smyx-bg-05            "#151515")
+      (smyx-bg-1             "#202020")
+      (smyx-bg               "#282828")
+      (smyx-bg+1             "#383838")
+      (smyx-bg+2             "#484848")
+      (smyx-bg+3             "#585858")
 
-      (smyx-red+1 "#992222")
-      (smyx-red "#FAB1AB")
-      (smyx-red-1 "#FAB1AB")
-      (smyx-red-2 "#FAB1AB")
-      (smyx-red-3 "#FAB1AB")
-      (smyx-red-4 "#FAB1AB")
-      (smyx-red-5 "#FAB1AB")
+      (smyx-red+1            "#992222")
+      (smyx-red              "#FAB1AB")
+      (smyx-red-1            "#FAB1AB")
+      (smyx-red-2            "#FAB1AB")
+      (smyx-red-3            "#FAB1AB")
+      (smyx-red-4            "#FAB1AB")
+      (smyx-red-5            "#FAB1AB")
 
-      (smyx-pink  "#EBA9F7")
-      (smyx-pink-1 "#DB98E7")
-      (smyx-pink-2 "#CB88D7")
+      (smyx-pink             "#EBA9F7")
+      (smyx-pink-1           "#DB98E7")
+      (smyx-pink-2           "#CB88D7")
 
-      (smyx-orange-2 "#FFBB00")
-      (smyx-orange-1 "#F0AA00") ;; DarkOrange
-      (smyx-orange "#FFA600")
+      (smyx-orange-2         "#FFBB00")
+      (smyx-orange-1         "#F0AA00") ;; DarkOrange
+      (smyx-orange           "#FFA600")
 
-      (smyx-yellow "#F6DC69")
-      (smyx-yellow-1 "#FBDE2D")
-      (smyx-yellow-2 "#d0bf8f")
-      (smyx-yellow-3 "#D8FA3C")
-      (smyx-yellow-4 "#E9C062")
-      (smyx-yellow-5 "#ffd700")
-      (smyx-yellow-org-todo "#DDDD00")
+      (smyx-yellow           "#F6DC69")
+      (smyx-yellow-1         "#FBDE2D")
+      (smyx-yellow-2         "#d0bf8f")
+      (smyx-yellow-3         "#D8FA3C")
+      (smyx-yellow-4         "#E9C062")
+      (smyx-yellow-5         "#ffd700")
+      (smyx-yellow-org-todo  "#DDDD00")
 
-      (smyx-green-2 "#617a11")
-      (smyx-green-1 "#91Ba31")
-      (smyx-green "#D1FA71")
-      (smyx-green+1 "#E1Fa81")
-      (smyx-green+2 "#9fc59f")
-      (smyx-green+3 "#afd8af")
-      (smyx-green+4 "#bfebbf")
-      (smyx-green-blue-org "#BBFFD1")
+      (smyx-green-2          "#617a11")
+      (smyx-green-1          "#91Ba31")
+      (smyx-green            "#D1FA71")
+      (smyx-green+1          "#E1Fa81")
+      (smyx-green+2          "#9fc59f")
+      (smyx-green+3          "#afd8af")
+      (smyx-green+4          "#bfebbf")
+      (smyx-green-blue-org   "#BBFFD1")
 
 
-      (smyx-cyan "#96D9F1")
-      (smyx-blue+1 "#94bff3")
-      (smyx-blue "#96D9F1")
-      (smyx-blue-1 "#7b68ee")
-      (smyx-blue-2 "#6a5acd")
-      (smyx-blue-3 "#add8e6")
-      (smyx-blue-4 "#b2dfee")
-      (smyx-blue-5 "#96D9F1")
-      (smyx-blue-6 "#96D9F1")
-      (smyx-blue-7 "#00ffff")
-      (smyx-blue-8 "#4F94CD")
+      (smyx-cyan             "#96D9F1")
+      (smyx-blue+1           "#94bff3")
+      (smyx-blue             "#96D9F1")
+      (smyx-blue-1           "#7b68ee")
+      (smyx-blue-2           "#6a5acd")
+      (smyx-blue-3           "#add8e6")
+      (smyx-blue-4           "#b2dfee")
+      (smyx-blue-5           "#96D9F1")
+      (smyx-blue-6           "#96D9F1")
+      (smyx-blue-7           "#00ffff")
+      (smyx-blue-8           "#4F94CD")
 
-      (smyx-magenta "#dc8cc3")
+      (smyx-magenta          "#dc8cc3")
 
-      (smyx-black "#282828")
-      (smyx-black-2 "#353535")
-      (smyx-black-3 "#414141")
-      (smyx-black-4 "#515151")
+      (smyx-black            "#282828")
+      (smyx-black-2          "#353535")
+      (smyx-black-3          "#414141")
+      (smyx-black-4          "#515151")
 
-      (smyx-gray "#d3d3d3")
-      (smyx-gray-2 "#8B8989")
-      (smyx-gray-3 "#919191")
-      (smyx-gray-4 "#999999")
-      (smyx-gray-5 "#333333")
-      (smyx-gray-6 "#1A1A1A")
-      (smyx-gray-7 "#4D4D4D")
-      (smyx-gray-8 "#262626")
-      (smyx-gray-9 "#8F8F8F")
-      (smyx-white "#ffffff")
-      (smyx-white-2 "#F8F8F8")
-      (smyx-white-3 "#fffafa"))
+      (smyx-gray             "#d3d3d3")
+      (smyx-gray-2           "#8B8989")
+      (smyx-gray-3           "#919191")
+      (smyx-gray-4           "#999999")
+      (smyx-gray-5           "#333333")
+      (smyx-gray-6           "#1A1A1A")
+      (smyx-gray-7           "#4D4D4D")
+      (smyx-gray-8           "#262626")
+      (smyx-gray-9           "#8F8F8F")
+      (smyx-white            "#ffffff")
+      (smyx-white-2          "#F8F8F8")
+      (smyx-white-3          "#fffafa"))
 
   (custom-theme-set-faces
    'smyx
@@ -127,7 +127,7 @@
    `(border-glyph ((,class (nil))))
    `(buffers-tab ((,class (:background ,smyx-black-2 :foreground ,smyx-white-2))))
 
-   ;;; basic coloring
+;;; basic coloring
    `(default ((,class (:foreground ,smyx-fg :background ,smyx-bg))))
    `(cursor ((,class (:background ,smyx-fg))))
    `(escape-glyph-face ((,class (:foreground ,smyx-red))))
@@ -135,13 +135,12 @@
    `(header-line ((,class (:foreground ,smyx-yellow
                            :background ,smyx-bg-1
                            :box (:line-width -1 :style released-button)))))
-   ;; `(highlight ((,class (:background ,smyx-gray-7))))
    `(highlight ((,class (:background "wheat4"))))
 
-   ;;; highlight current line
+;;; highlight current line
    `(hl-line ((,class (:background ,smyx-bg+2))))
 
-   ;;; compilation
+;;; compilation
    `(compilation-column-face ((,class (:foreground ,smyx-blue))))
    `(compilation-enter-directory-face ((,class (:foreground ,smyx-blue))))
    `(compilation-error-face ((,class (:foreground ,smyx-red ,:weight bold :underline t))))
@@ -154,20 +153,17 @@
    `(compilation-message-face ((,class (:foreground ,smyx-blue))))
    `(compilation-warning-face ((,class (:foreground ,smyx-yellow :weight bold :underline t))))
 
-   ;;; grep
+;;; grep
    `(grep-context-face ((,class (:foreground ,smyx-black :background ,smyx-pink-1))))
    `(grep-error-face ((,class (:foreground ,smyx-red :weight bold :underline t))))
    `(grep-hit-face ((,class (:foreground ,smyx-black :background ,smyx-red))))
    `(grep-match-face ((,class (:foreground ,smyx-black :background ,smyx-pink-1))))
    `(match ((,class (:foreground ,smyx-black :background ,smyx-orange :weight bold))))
-   ;; `(match ((,class (:background ,smyx-gray-5 :weight bold))))
-   ;; `(match ((,class (:background ,smyx-black :foreground ,smyx-pink-1))))
 
-
-   ;;; multiple-cursors
+;;; multiple-cursors
    `(mc/cursor-face ((,class (:inverse-video nil, :background ,smyx-pink :foreground ,smyx-black))))
 
-   ;; faces used by isearch
+;;; isearch
    `(isearch ((,class (:foreground ,smyx-black :background ,smyx-green))))
    `(isearch-fail ((,class (:foreground ,smyx-black :background ,smyx-pink))))
 
@@ -195,7 +191,7 @@
    `(trailing-whitespace ((,class (:background ,smyx-red))))
    `(vertical-border ((,class (:foreground ,smyx-gray-5 :background ,smyx-black))))
 
-   ;;; font lock
+;;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,smyx-orange))))
    `(font-lock-comment-face ((,class (:foreground ,smyx-gray-9 :italic t))))
    ;; `(font-lock-comment-delimiter-face ((,class (:foreground ,smyx-green))))
@@ -220,8 +216,7 @@
 
    `(gui-element ((,class (:background ,smyx-gray-5 :foreground ,smyx-blue-6))))
 
-
-   ;;; newsticker
+;;; newsticker
    ;; These are currently placeholders that probably look terrible.
    ;; Someone who uses newsticker is welcome to change these
    `(newsticker-date-face ((,class (:foreground ,smyx-fg))))
@@ -242,15 +237,13 @@
    `(newsticker-treeview-old-face ((,class (:foreground ,smyx-bg+3))))
    `(newsticker-treeview-selection-face ((,class (:foreground ,smyx-yellow))))
 
-   ;;; external
-
-   ;; full-ack
+;;; full-ack
    `(ack-separator ((,class (:foreground ,smyx-fg))))
    `(ack-file ((,class (:foreground ,smyx-blue))))
    `(ack-line ((,class (:foreground ,smyx-yellow))))
    `(ack-match ((,class (:foreground ,smyx-orange :background ,smyx-bg-1 :weigth bold))))
 
-   ;; auctex
+;;; auctex
    `(font-latex-bold ((,class (:inherit bold))))
    `(font-latex-warning ((,class (:inherit font-lock-warning))))
    `(font-latex-sedate ((,class (:foreground ,smyx-yellow :weight bold))))
@@ -259,7 +252,7 @@
    `(font-latex-sectioning-0 ((,class (:foreground ,smyx-blue :background ,smyx-black :scale 1.5))))
    `(font-latex-sectioning-1 ((,class (:foreground ,smyx-blue :background ,smyx-black :scale 1.5))))
 
-   ;; auto-complete
+;;; auto-complete
    `(ac-completion-face ((,class (:background ,smyx-gray-4 :underline t))))
    `(ac-candidate-face ((,class (:background ,smyx-gray-5 :foreground ,smyx-white))))
    `(ac-selection-face ((,class (:background ,smyx-green :foreground ,smyx-black))))
@@ -269,8 +262,7 @@
    `(popup-isearch-match ((,class (:background ,smyx-black :foreground ,smyx-pink))))
    `(window-number-face ((,class (:background ,smyx-gray-6 :foreground ,smyx-green))))
 
-   ;; company-mode
-   ;; company--
+;;; company-mode
    `(company-tooltip ((,class (:background ,smyx-gray-5 :foreground ,smyx-white))))
    `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,smyx-green))))
    `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection :foreground ,smyx-black-3))))
@@ -281,14 +273,14 @@
    `(company-scrollbar-bg ((,class (:background ,smyx-gray-3))))
    `(company-preview ((,class (:foreground ,smyx-gray-2 :background ,smyx-pink))))
 
-   ;; diff
+;;; diff
    `(diff-added ((,class (:foreground ,smyx-green))))
    `(diff-changed ((,class (:foreground ,smyx-yellow))))
    `(diff-removed ((,class (:foreground ,smyx-red))))
    `(diff-header ((,class (:background ,smyx-bg+2))))
    `(diff-file-header ((,class (:background ,smyx-bg+2 :foreground ,smyx-fg :bold t))))
 
-   ;; ediff
+;;; ediff
    `(ediff-current-diff-Ancestor ((,class (:foreground ,smyx-fg :background ,smyx-pink))))
    `(ediff-current-diff-A ((,class (:foreground ,smyx-fg :background ,smyx-bg-05))))
    `(ediff-current-diff-B ((,class (:foreground ,smyx-fg :background ,smyx-bg+1))))
@@ -306,11 +298,11 @@
    `(ediff-odd-diff-B ((,class (:foreground ,smyx-black :background ,smyx-gray-4))))
    `(ediff-odd-diff-C ((,class (:foreground ,smyx-black :background ,smyx-gray))))
 
-   ;; ert
+;;; ert
    `(ert-test-result-expected ((,class (:foreground ,smyx-green+4 :background ,smyx-bg))))
    `(ert-test-result-unexpected ((,class (:foreground ,smyx-red :background ,smyx-bg))))
 
-   ;; eshell
+;;; eshell
    `(eshell-prompt ((,class (:foreground ,smyx-yellow :weight bold))))
    `(eshell-ls-archive ((,class (:foreground ,smyx-red-1 :weight bold))))
    `(eshell-ls-backup ((,class (:inherit font-lock-comment))))
@@ -323,15 +315,15 @@
    `(eshell-ls-special ((,class (:foreground ,smyx-yellow :weight bold))))
    `(eshell-ls-symlink ((,class (:foreground ,smyx-cyan :weight bold))))
 
-   ;; flymake
+;;; flymake
    `(flymake-errline ((,class (:foreground ,smyx-red :weight bold :underline t))))
    `(flymake-warnline ((,class (:foreground ,smyx-orange :weight bold :underline t))))
 
-   ;; flyspell
+;;; flyspell
    `(flyspell-duplicate ((,class (:underline (:style wave :color ,smyx-yellow) :inherit nil))))
    `(flyspell-incorrect ((,class (:underline (:style wave :color ,smyx-red) :inherit nil))))
 
-   ;; erc
+;;; erc
    `(erc-action-face ((,class (:inherit erc-default-face))))
    `(erc-bold-face ((,class (:weight bold))))
    `(erc-current-nick-face ((,class (:foreground ,smyx-blue :weight bold))))
@@ -352,7 +344,7 @@
    `(erc-timestamp-face ((,class (:foreground ,smyx-green+1))))
    `(erc-underline-face ((t (:underline t))))
 
-   ;; gnus
+;;; gnus
    `(gnus-group-mail-1 ((,class (:bold t :inherit gnus-group-mail-1-empty))))
    `(gnus-group-mail-1-empty ((,class (:inherit gnus-group-news-1-empty))))
    `(gnus-group-mail-2 ((,class (:bold t :inherit gnus-group-mail-2-empty))))
@@ -414,7 +406,7 @@
    `(gnus-signature ((,class (:foreground ,smyx-yellow))))
    `(gnus-x ((,class (:background ,smyx-fg :foreground ,smyx-bg))))
 
-   ;; helm
+;;; helm
    `(helm-header
      ((,class (:foreground ,smyx-green
                :background ,smyx-bg
@@ -431,17 +423,17 @@
    `(helm-visible-mark ((,class (:foreground ,smyx-bg :background ,smyx-yellow-2))))
    `(helm-candidate-number ((,class (:foreground ,smyx-green+4 :background ,smyx-bg-1))))
 
-   ;; hl-line-mode
+;;; hl-line-mode
    `(hl-sexp-face ((,class (:background ,smyx-gray-5))))
    `(hl-line-face ((,class (:background ,smyx-gray-5))))
 
-   ;; ido-mode
+;;; ido-mode
    `(ido-first-match ((,class (:foreground ,smyx-blue :background ,smyx-black))))
    `(ido-only-match ((,class (:foreground ,smyx-blue :background ,smyx-black))))
    `(ido-subdir ((,class (:foreground ,smyx-gray-4 :background ,smyx-black))))
    `(ido-indicator ((,class (:foreground ,smyx-bg :background ,smyx-pink))))
 
-   ;; js2-mode
+;;; js2-mode
    `(js2-warning-face ((,class (:underline ,smyx-blue))))
    `(js2-error-face ((,class (:foreground ,smyx-red :weight bold))))
    `(js2-jsdoc-tag-face ((,class (:foreground ,smyx-green))))
@@ -452,7 +444,7 @@
    `(js2-external-variable ((,class (:foreground , smyx-blue))))
    `(js2-function-param ((,class (:foreground, smyx-yellow))))
 
-   ;; jabber-mode
+;;; jabber-mode
    `(jabber-roster-user-away ((,class (:foreground ,smyx-green+2))))
    `(jabber-roster-user-online ((,class (:foreground ,smyx-blue-1))))
    `(jabber-roster-user-dnd ((,class (:foreground ,smyx-red+1))))
@@ -465,10 +457,10 @@
    `(jabber-title-medium ((,class (:height 1.2 :weight bold))))
    `(jabber-title-large ((,class (:height 1.3 :weight bold))))
 
-   ;; linum-mode
+;;; linum-mode
    `(linum ((,class (:foreground ,smyx-gray-9 :background ,smyx-bg))))
 
-   ;; magit
+;;; magit
    `(magit-section-title ((,class (:foreground ,smyx-green))))
    `(magit-branch ((,class (:foreground ,smyx-blue))))
    `(magit-item-highlight ((,class (:background ,smyx-black-4))))
@@ -487,7 +479,7 @@
 
    `(eval-sexp-fu-flash ((,class (:background ,smyx-gray-8 :foreground ,smyx-pink-2))))
 
-   ;; message-mode
+;;; message-mode
    `(message-cited-text ((,class (:inherit font-lock-comment))))
    `(message-header-name ((,class (:foreground ,smyx-blue-5))))
    `(message-header-other ((,class (:foreground ,smyx-green))))
@@ -500,7 +492,7 @@
    `(message-mml ((,class (:foreground ,smyx-yellow :weight bold))))
    `(message-separator ((,class (:inherit font-lock-comment))))
 
-   ;; mew
+;;; mew
    `(mew-face-header-subject ((,class (:foreground ,smyx-orange))))
    `(mew-face-header-from ((,class (:foreground ,smyx-yellow))))
    `(mew-face-header-date ((,class (:foreground ,smyx-green))))
@@ -528,12 +520,12 @@
    `(mew-face-eof-message ((,class (:foreground ,smyx-green))))
    `(mew-face-eof-part ((,class (:foreground ,smyx-yellow))))
 
-   ;; mic-paren
+;;; mic-paren
    `(paren-face-match ((,class (:foreground ,smyx-cyan :background ,smyx-bg :weight bold))))
    `(paren-face-mismatch ((,class (:foreground ,smyx-bg :background ,smyx-magenta :weight bold))))
    `(paren-face-no-match ((,class (:foreground ,smyx-bg :background ,smyx-red :weight bold))))
 
-   ;; nav
+;;; nav
    `(nav-face-heading ((,class (:foreground ,smyx-yellow))))
    `(nav-face-button-num ((,class (:foreground ,smyx-cyan))))
    `(nav-face-dir ((,class (:foreground ,smyx-green))))
@@ -541,14 +533,14 @@
    `(nav-face-file ((,class (:foreground ,smyx-fg))))
    `(nav-face-hfile ((,class (:foreground ,smyx-red-4))))
 
-   ;; mumamo
+;;; mumamo
    `(mumamo-background-chunk-major ((,class (:background ,smyx-black))))
    `(mumamo-background-chunk-submode1 ((,class (:background ,smyx-black))))
    `(mumamo-background-chunk-submode2 ((,class (:background ,smyx-bg+2))))
    `(mumamo-background-chunk-submode3 ((,class (:background ,smyx-bg+3))))
    `(mumamo-background-chunk-submode4 ((,class (:background ,smyx-bg+1))))
 
-   ;; org-mode
+;;; org-mode
    `(org-document-title ((,class (:foreground ,smyx-blue :background ,smyx-black :weight bold ))))
    `(org-document-info ((,class (:foreground ,smyx-green :background ,smyx-black :weight bold))))
    `(org-document-info-keyword ((,class (:foreground ,smyx-gray-2 :background ,smyx-black))))
@@ -598,7 +590,7 @@
    ;; `(org-warning ((,class (:bold t :foreground ,smyx-red :weight bold :underline nil))))
    ;; `(org-formula ((,class (:foreground ,smyx-yellow-2))))
 
-   ;; outline
+;;; outline
    `(outline-8 ((,class (:inherit default))))
    `(outline-7 ((,class (:inherit outline-8 :height 1.0))))
    `(outline-6 ((,class (:inherit outline-7 :height 1.0))))
@@ -608,7 +600,7 @@
    `(outline-2 ((,class (:inherit outline-3 :height 1.0))))
    `(outline-1 ((,class (:inherit outline-2 :height 1.0))))
 
-   ;; rainbow-delimiters
+;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,smyx-red-1))))
    `(rainbow-delimiters-depth-2-face ((,class (:foreground ,smyx-green-2))))
    `(rainbow-delimiters-depth-3-face ((,class (:foreground ,smyx-pink-1))))
@@ -622,7 +614,7 @@
    `(rainbow-delimiters-depth-11-face ((,class (:foreground ,smyx-blue+1))))
    `(rainbow-delimiters-depth-12-face ((,class (:foreground ,smyx-red-4))))
 
-   ;; rpm-mode
+;;; rpm-mode
    `(rpm-spec-dir-face ((,class (:foreground ,smyx-green))))
    `(rpm-spec-doc-face ((,class (:foreground ,smyx-green))))
    `(rpm-spec-ghost-face ((,class (:foreground ,smyx-red))))
@@ -633,7 +625,7 @@
    `(rpm-spec-tag-face ((,class (:foreground ,smyx-blue))))
    `(rpm-spec-var-face ((,class (:foreground ,smyx-red))))
 
-   ;; rst-mode
+;;; rst-mode
    `(rst-level-1-face ((,class (:foreground ,smyx-orange))))
    `(rst-level-2-face ((,class (:foreground ,smyx-green+1))))
    `(rst-level-3-face ((,class (:foreground ,smyx-blue-1))))
@@ -641,7 +633,7 @@
    `(rst-level-5-face ((,class (:foreground ,smyx-cyan))))
    `(rst-level-6-face ((,class (:foreground ,smyx-green-1))))
 
-   ;; show-paren
+;;; show-paren
    `(show-paren-mismatch ((,class (:foreground ,smyx-red-3 :background ,smyx-black))))
    `(show-paren-match ((,class (:foreground ,smyx-black :background ,smyx-pink-1))))
 
@@ -652,10 +644,10 @@
    `(naeu-red-face ((,class (:foreground ,smyx-orange :background ,smyx-black))))
    `(naeu-grey-face ((,class (:foreground ,smyx-gray-7 :background ,smyx-black))))
 
-   ;; SLIME
+;;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,smyx-red))))
 
-   ;; elscreen
+;;; elscreen
    `(elscreen-tab-other-screen-face (
                                      (,class (:foreground ,smyx-gray :background ,smyx-black))))
 
@@ -683,12 +675,12 @@
    `(term-default-fg-color ((,class (:inherit term-color-white))))
    `(term-default-bg-color ((,class (:inherit term-color-black))))
 
-   ;; volatile-highlights
+;;; volatile-highlights
    `(vhl/default-face ((,class (:background ,smyx-gray-5))))
 
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,smyx-pink-1 :background ,smyx-black))))
 
-   ;; whitespace-mode
+;;; whitespace-mode
    `(whitespace-space ((,class (:background ,smyx-bg :foreground ,smyx-bg+1))))
    `(whitespace-hspace ((,class (:background ,smyx-bg :foreground ,smyx-bg+1))))
    `(whitespace-tab ((,class (:background ,smyx-bg :foreground ,smyx-red))))
@@ -700,7 +692,7 @@
    `(whitespace-empty ((,class (:background ,smyx-yellow :foreground ,smyx-red))))
    `(whitespace-space-after-tab ((,class (:background ,smyx-yellow :foreground ,smyx-red))))
 
-   ;; wanderlust
+;;; wanderlust
    `(wl-highlight-folder-few-face ((,class (:foreground ,smyx-red-2))))
    `(wl-highlight-folder-many-face ((,class (:foreground ,smyx-red-1))))
    `(wl-highlight-folder-path-face ((,class (:foreground ,smyx-orange))))
@@ -729,13 +721,13 @@
    `(wl-highlight-summary-refiled-face ((,class (:foreground ,smyx-fg))))
    `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
 
-   ;; which-func-mode
+;;; which-func-mode
    `(which-func ((,class (:foreground ,smyx-green+4))))
 
-   ;; yasnippet
+;;; yasnippet
    `(yas/field-highlight-face ((,class (:background ,smyx-pink-1 :foreground ,smyx-black))))
 
-   ;; enh-ruby-mode
+;;; enh-ruby-mode
    `(enh-ruby-op-face ((,class (:foreground ,smyx-orange)))) ; || and +
    `(enh-ruby-heredoc-delimiter-face ((,class (:foreground ,smyx-blue))))
    `(enh-ruby-string-delimiter-face ((,class (:foreground ,smyx-green))))
@@ -743,17 +735,17 @@
    `(erm-syn-errline ((,class (:color ,smyx-red))))
    `(erm-syn-warnline ((,class (:color ,smyx-red))))
 
-   ;; guide-key
+;;; guide-key
    `(guide-key/highlight-command-face ((t (:foreground ,smyx-green))))
    `(guide-key/key-face ((t (:foreground ,smyx-white))))
    `(guide-key/prefix-command-face ((t (:foreground ,smyx-yellow))))
 
-   ;; yascroll
+;;; yascroll
    `(yascroll:thumb-text-area ((,class (:background ,smyx-bg-1))))
    `(yascroll:thumb-fringe ((,class (:background ,smyx-bg-1 :foreground ,smyx-bg-1))))
    )
 
-  ;;; custom theme variables
+;;; custom theme variables
   (custom-theme-set-variables
    'smyx
    `(ansi-color-names-vector [,smyx-bg ,smyx-red-2 ,smyx-green ,smyx-orange
@@ -767,12 +759,14 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
+
 (provide-theme 'smyx)
 
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; indent-tabs-mode: nil
 ;; eval: (when (fboundp 'rainbow-mode) (rainbow-mode +1))
+;; eval: (when (fboundp 'aggressive-indent) (aggressive-indent-mode -1))
 ;; End:
 
-;;; smyx-theme.el ends here.
+;;;; smyx-theme.el ends here.
