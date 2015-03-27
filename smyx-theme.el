@@ -274,9 +274,9 @@
    `(ediff-odd-diff-C ((,class (:foreground ,smyck-gray-1 :background ,smyck-gray+1))))
 
 ;;; diff-hl
-   `(diff-hl-insert ((,class (:foreground ,smyck-green+0 :background ,smyck-green+1))))
+   `(diff-hl-insert ((,class (:foreground ,smyck-green+0 ))))
    `(diff-hl-delete ((,class (:foreground ,smyck-red+0))))
-   `(diff-hl-change ((,class (:foreground ,smyck-turquoise+0 :background ,smyck-gray+0))))
+   `(diff-hl-change ((,class (:foreground ,smyck-turquoise+0 :background ,smyx-bg+1))))
 
 ;;; ert
    `(ert-test-result-expected ((,class (:foreground ,smyx-green+3 :background ,smyx-bg))))
