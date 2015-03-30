@@ -85,7 +85,6 @@
        (smyx-yellow-1         "#fbde2d")
        (smyx-yellow-2         "#d0bf8f")
 
-       (smyx-green+1          "#e1fa81")
        (smyx-green+2          "#9fc59f")
        (smyx-green+3          "#afd8af")
        )
@@ -151,7 +150,7 @@
    `(underline ((,class (:underline nil))))
    `(text-cursor ((,class (:background ,smyx-yellow :foreground ,smyck-gray-1))))
    `(menu ((,class (:foreground ,smyx-fg :background ,smyx-bg))))
-   `(minibuffer-prompt ((,class (:foreground ,smyx-green+1 :background ,smyck-gray-1))))
+   `(minibuffer-prompt ((,class (:foreground ,smyck-green+1 :background ,smyck-gray-1))))
    `(mode-line
      ((,class (:foreground ,smyck-blue+1 ;;; dominant
                :background ,smyx-black-2))))
@@ -321,7 +320,7 @@
    `(erc-notice-face ((,class (:foreground ,smyck-green+1))))
    `(erc-pal-face ((,class (:foreground ,smyck-yellow+0 :weight bold))))
    `(erc-prompt-face ((,class (:foreground ,smyck-yellow+0 :background ,smyx-bg :weight bold))))
-   `(erc-timestamp-face ((,class (:foreground ,smyx-green+1))))
+   `(erc-timestamp-face ((,class (:foreground ,smyck-green+1))))
    `(erc-underline-face ((t (:underline t))))
 
 ;;; gnus
@@ -371,14 +370,14 @@
    `(gnus-cite-2 ((,class (:foreground ,smyck-blue+0))))
    `(gnus-cite-3 ((,class (:foreground ,smyck-blue+1))))
    `(gnus-cite-4 ((,class (:foreground ,smyx-green+2))))
-   `(gnus-cite-5 ((,class (:foreground ,smyx-green+1))))
+   `(gnus-cite-5 ((,class (:foreground ,smyck-green+1))))
    `(gnus-cite-6 ((,class (:foreground ,smyck-green+1))))
    `(gnus-cite-7 ((,class (:foreground ,smyck-red+0))))
    `(gnus-cite-8 ((,class (:foreground ,smyx-red-1))))
    `(gnus-cite-9 ((,class (:foreground ,smyck-red+0))))
    `(gnus-group-news-1-empty ((,class (:foreground ,smyx-yellow))))
    `(gnus-group-news-2-empty ((,class (:foreground ,smyx-green+3))))
-   `(gnus-group-news-3-empty ((,class (:foreground ,smyx-green+1))))
+   `(gnus-group-news-3-empty ((,class (:foreground ,smyck-green+1))))
    `(gnus-group-news-4-empty ((,class (:foreground ,smyck-blue+1))))
    `(gnus-group-news-5-empty ((,class (:foreground ,smyck-blue+1))))
    `(gnus-group-news-6-empty ((,class (:foreground ,smyx-bg+2))))
@@ -428,7 +427,7 @@
    `(jabber-roster-user-away ((,class (:foreground ,smyx-green+2))))
    `(jabber-roster-user-online ((,class (:foreground ,smyck-blue+0))))
    `(jabber-roster-user-dnd ((,class (:foreground ,smyx-red+1))))
-   `(jabber-rare-time-face ((,class (:foreground ,smyx-green+1))))
+   `(jabber-rare-time-face ((,class (:foreground ,smyck-green+1))))
    `(jabber-chat-prompt-local ((,class (:foreground ,smyck-blue+0))))
    `(jabber-chat-prompt-foreign ((,class (:foreground ,smyx-red+1))))
    `(jabber-activity-face((,class (:foreground ,smyx-red+1))))
@@ -607,7 +606,7 @@
 
 ;;; rst-mode
    `(rst-level-1-face ((,class (:foreground ,smyck-yellow+0))))
-   `(rst-level-2-face ((,class (:foreground ,smyx-green+1))))
+   `(rst-level-2-face ((,class (:foreground ,smyck-green+1))))
    `(rst-level-3-face ((,class (:foreground ,smyck-blue+0))))
    `(rst-level-4-face ((,class (:foreground ,smyx-yellow-2))))
    `(rst-level-5-face ((,class (:foreground ,smyck-blue+1))))
@@ -687,7 +686,7 @@
    `(wl-highlight-message-header-contents-face ((,class (:foreground ,smyck-green+1))))
    `(wl-highlight-message-headers-face ((,class (:foreground ,smyx-red+1))))
    `(wl-highlight-message-important-header-contents ((,class (:foreground ,smyx-green+2))))
-   `(wl-highlight-message-header-contents ((,class (:foreground ,smyx-green+1))))
+   `(wl-highlight-message-header-contents ((,class (:foreground ,smyck-green+1))))
    `(wl-highlight-message-important-header-contents2 ((,class (:foreground ,smyx-green+2))))
    `(wl-highlight-message-signature ((,class (:foreground ,smyck-green+1))))
    `(wl-highlight-message-unimportant-header-contents ((,class (:foreground ,smyx-fg))))
@@ -702,7 +701,7 @@
    `(wl-highlight-summary-displaying-face ((,class (:underline t :weight bold))))
 
 ;;; which-func-mode
-   `(which-func ((,class (:foreground ,smyx-green+3))))
+   `(which-func ((,class (:foreground ,smyck-green+1))))
 
 ;;; yasnippet
    `(yas/field-highlight-face ((,class (:background ,smyck-purple+1 :foreground ,smyck-gray-1))))
