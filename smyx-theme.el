@@ -64,19 +64,17 @@
 
        ;; smyx palette
 
-       (smyx-black+1          "#1a1a1a") ; #5d5d5d #b0b0b0
-       (smyx-bg-1             "#202020") ; #5d5d5d #b0b0b0
-       (smyx-gray-8           "#262626") ; #5d5d5d #b0b0b0
-       (smyx-bg+1             "#383838") ; #5d5d5d #b0b0b0
-       (smyx-black-2          "#353535") ; #5d5d5d #b0b0b0
-       (smyx-gray-5           "#333333") ; #5d5d5d #b0b0b0
-       (smyx-black-3          "#414141") ; #5d5d5d #b0b0b0
-       (smyx-bg+2             "#484848") ; #5d5d5d #b0b0b0
-       (smyx-gray-7           "#4d4d4d") ; #5d5d5d #b0b0b0
-       (smyx-gray-2           "#8b8989") ; #5d5d5d #b0b0b0
-       (smyx-gray-9           "#8f8f8f") ; #5d5d5d #b0b0b0
-       (smyx-gray-3           "#919191") ; #5d5d5d #b0b0b0
-       (smyx-gray-4           "#999999") ; #5d5d5d #b0b0b0
+       (smyx-black+1          "#1a1a1a")
+       (smyx-bg-1             "#202020")
+       (smyx-gray-8           "#262626")
+       (smyx-bg+1             "#383838")
+       (smyx-black-2          "#353535")
+       (smyx-gray-5           "#333333")
+       (smyx-bg+2             "#484848")
+       (smyx-gray-2           "#8b8989")
+       (smyx-gray-9           "#8f8f8f")
+       (smyx-gray-3           "#919191")
+       (smyx-gray-4           "#999999")
 
        (smyx-red+1            "#992222")
        (smyx-red-1            "#fab1ab")
@@ -109,11 +107,15 @@
                            :background ,smyx-bg-1
                            :box (:line-width -1 :style released-button)))))
 
-   `(match ((,class (:foreground ,smyck-red+0 :weight bold))))
+   `(region ((,class (:background ,smyx-bg+2))))
    `(highlight ((,class (:background ,smyck-red+1))))
+   `(match ((,class (:foreground ,smyck-red+0 :weight bold))))
 
 ;;; highlight current line
    `(hl-line ((,class (:background ,smyx-bg+2))))
+
+;;; stripe-buffer
+   `(stripe-highlight ((,class (:background ,smyx-bg-1))))
 
 ;;; compilation
    `(compilation-column-face ((,class (:foreground ,smyck-blue+1))))
@@ -157,10 +159,9 @@
    ;; `(mode-line-buffer-id ((,class (:foreground ,smyx-yellow :weight bold))))
 
    `(mode-line-inactive
-     ((,class (:foreground ,smyx-gray-7
+     ((,class (:foreground ,smyx-bg+2
                :background ,smyx-black+1))))
 
-   `(region ((,class (:background ,smyx-black-3))))
    `(secondary-selection ((,class (:background ,smyx-bg+2))))
    `(trailing-whitespace ((,class (:background ,smyck-red+0))))
    `(vertical-border ((,class (:foreground ,smyx-gray-5 :background ,smyck-gray-1))))
@@ -231,7 +232,7 @@
    `(ac-candidate-face ((,class (:background ,smyx-gray-5 :foreground ,smyck-white+0))))
    `(ac-selection-face ((,class (:background ,smyck-green+1 :foreground ,smyck-gray-1))))
    `(popup-tip-face ((,class (:background ,smyx-gray-5 :foreground ,smyck-white+0))))
-   `(popup-scroll-bar-foreground-face ((,class (:background ,smyx-black-3))))
+   `(popup-scroll-bar-foreground-face ((,class (:background ,smyx-bg+2))))
    `(popup-scroll-bar-background-face ((,class (:background ,smyx-gray-5))))
    `(popup-isearch-match ((,class (:background ,smyck-gray-1 :foreground ,smyck-purple+1))))
    `(window-number-face ((,class (:background ,smyx-black+1 :foreground ,smyck-green+1))))
@@ -239,11 +240,11 @@
 ;;; company-mode
    `(company-tooltip ((,class (:background ,smyx-gray-5 :foreground ,smyck-white+0))))
    `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,smyck-green+1))))
-   `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection :foreground ,smyx-black-3))))
+   `(company-tooltip-common-selection ((,class (:inherit company-tooltip-selection :foreground ,smyx-bg+2))))
    `(company-tooltip-selection ((,class (:foreground ,smyck-gray-1 :background ,smyck-green+1))))
-   `(company-tooltip-annotation ((,class (:foreground , smyx-black-3 :background ,smyx-gray-5))))
+   `(company-tooltip-annotation ((,class (:foreground , smyx-bg+2 :background ,smyx-gray-5))))
 
-   `(company-scrollbar-fg ((,class (:background ,smyx-black-3))))
+   `(company-scrollbar-fg ((,class (:background ,smyx-bg+2))))
    `(company-scrollbar-bg ((,class (:background ,smyx-gray-3))))
    `(company-preview ((,class (:foreground ,smyx-gray-2 :background ,smyck-purple+1))))
 
@@ -621,7 +622,7 @@
    `(naeu-blue-face ((,class (:foreground ,smyck-blue+0 :background ,smyck-gray-1))))
    `(naeu-orange-face ((,class (:foreground ,smyx-yellow-1 :background ,smyck-gray-1))))
    `(naeu-red-face ((,class (:foreground ,smyck-yellow+0 :background ,smyck-gray-1))))
-   `(naeu-grey-face ((,class (:foreground ,smyx-gray-7 :background ,smyck-gray-1))))
+   `(naeu-grey-face ((,class (:foreground ,smyx-bg+2 :background ,smyck-gray-1))))
 
 ;;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,smyck-red+0))))
