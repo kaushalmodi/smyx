@@ -108,7 +108,7 @@
                            :box (:line-width -1 :style released-button)))))
 
    `(region ((,class (:background ,smyx-bg+2))))
-   `(highlight ((,class (:background ,smyck-red+1))))
+   `(highlight ((,class (:background ,smyx-bg+2))))
    `(match ((,class (:foreground ,smyck-red+0 :weight bold))))
 
 ;;; highlight current line
@@ -140,10 +140,9 @@
    `(mc/cursor-face ((,class (:inverse-video nil, :background ,smyck-purple+1 :foreground ,smyck-gray-1))))
 
 ;;; isearch
-   ;; `(isearch ((,class (:foreground ,smyck-gray-1 :background ,smyck-green+1))))
    `(isearch ((,class (:weight bold :foreground nil :background ,smyck-green+0))))
    `(lazy-highlight ((,class (:foreground ,smyck-black+0 :background ,smyck-yellow+1))))
-   `(isearch-fail ((,class (:foreground ,smyck-gray-1 :background ,smyck-purple+1))))
+   `(isearch-fail ((,class (:foreground ,smyck-gray-1 :background ,smyck-red+1))))
    `(query-replace ((,class (:weight bold :foreground nil :background ,smyck-blue+1))))
    `(Highline-face ((,class (:background ,smyck-green+1))))
    `(italic ((,class (nil))))
