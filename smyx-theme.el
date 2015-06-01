@@ -247,6 +247,9 @@
    `(company-scrollbar-bg ((,class (:background ,smyx-gray-3))))
    `(company-preview ((,class (:foreground ,smyx-gray-2 :background ,smyck-purple+1))))
 
+;;; deft
+   `(deft-title-face ((,class (:foreground ,smyck-red+0 :weight bold))))
+
 ;;; diff
    `(diff-added ((,class (:foreground ,smyck-green+1))))
    `(diff-changed ((,class (:foreground ,smyx-yellow))))
@@ -634,7 +637,7 @@
                                        (,class (:foreground ,smyx-gray-5 :background ,smyck-gray+1))))
 
 
-  ;;; ansi-term
+;;; ansi-term
    `(term-color-black ((,class (:foreground ,smyx-bg
                                 :background ,smyx-bg-1))))
    `(term-color-red ((,class (:foreground ,smyck-red+0
