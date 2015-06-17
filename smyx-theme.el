@@ -442,6 +442,9 @@
 ;;; linum-mode
    `(linum ((,class (:height 0.9 :foreground ,smyx-gray-9 :background ,smyx-bg))))
 
+;;; easy-escape-mode
+   `(easy-escape-face ((,class (:height 1.0 :weight bold :background ,smyx-bg-1))))
+
 ;;; magit
    `(magit-section-title ((,class (:foreground ,smyck-green+1))))
    `(magit-branch ((,class (:foreground ,smyck-blue+1))))
