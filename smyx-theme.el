@@ -236,6 +236,10 @@
    `(popup-isearch-match ((,class (:background ,smyck-gray-1 :foreground ,smyck-purple+1))))
    `(window-number-face ((,class (:background ,smyx-black+1 :foreground ,smyck-green+1))))
 
+;;; bm
+   `(bm-fringe-face            ((,class (:foreground ,smyck-white+0))))
+   `(bm-fringe-persistent-face ((,class (:foreground ,smyck-yellow+1))))
+
 ;;; company-mode
    `(company-tooltip ((,class (:background ,smyx-gray-5 :foreground ,smyck-white+0))))
    `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,smyck-green+1))))
