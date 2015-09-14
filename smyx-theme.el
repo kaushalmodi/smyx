@@ -190,6 +190,9 @@
 
    `(gui-element ((,class (:background ,smyx-gray-5 :foreground ,smyck-blue+1))))
 
+;;; anzu
+   `(anzu-mode-line ((,class (:foreground ,smyck-blue+0 :weight bold))))
+
 ;;; newsticker
    ;; These are currently placeholders that probably look terrible.
    ;; Someone who uses newsticker is welcome to change these
