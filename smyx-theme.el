@@ -416,6 +416,9 @@
    `(hl-sexp-face ((,class (:background ,smyx-gray-5))))
    `(hl-line-face ((,class (:background ,smyx-gray-5))))
 
+;;; Info-mode
+   `(Info-quoted ((,class (:foreground ,smyck-gray+1))))
+
 ;;; ido-mode
    `(ido-first-match ((,class (:foreground ,smyck-blue+1 :background ,smyck-gray-1))))
    `(ido-only-match ((,class (:foreground ,smyck-blue+1 :background ,smyck-gray-1))))
