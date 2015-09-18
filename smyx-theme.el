@@ -719,6 +719,10 @@
 ;;; which-func-mode
    `(which-func ((,class (:foreground ,smyck-green+1))))
 
+;;; which-key
+   `(which-key-highlighted-command-face ((,class (:foreground ,smyck-yellow+1))))
+   `(modi/wk-highlight-modi-face ((,class (:foreground ,smyck-red+0))))
+
 ;;; yasnippet
    `(yas/field-highlight-face ((,class (:background ,smyck-purple+1 :foreground ,smyck-gray-1))))
 
