@@ -140,7 +140,7 @@
    `(mc/cursor-face ((,class (:inverse-video nil, :background ,smyck-purple+1 :foreground ,smyck-gray-1))))
 
 ;;; isearch
-   `(isearch ((,class (:weight bold :foreground nil :background ,smyck-green+0))))
+   `(isearch ((,class (:weight bold :foreground ,smyck-black+0 :background ,smyck-green+0))))
    `(lazy-highlight ((,class (:foreground ,smyck-black+0 :background ,smyck-yellow+1))))
    `(isearch-fail ((,class (:foreground ,smyck-gray-1 :background ,smyck-red+1))))
    `(query-replace ((,class (:weight bold :foreground nil :background ,smyck-blue+1))))
@@ -418,6 +418,8 @@
 
 ;;; Info-mode
    `(Info-quoted ((,class (:foreground ,smyck-gray+1))))
+;;; info+
+   `(info-quoted-name ((,class (:inherit Info-quoted))))
 
 ;;; ido-mode
    `(ido-first-match ((,class (:foreground ,smyck-blue+1 :background ,smyck-gray-1))))
