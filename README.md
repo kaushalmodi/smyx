@@ -3,10 +3,8 @@ This is a color theme for emacs. It is based on the smyck color theme by hukl wh
 
 ## Screenshots
 
-### Ruby sample
-![](http://i.imgur.com/7iJE5Ho.png?1)
+### `emacs-lisp-mode`
+![smyx in emacs-lisp-mode](https://github.com/kaushalmodi/smyx/blob/master/screenshots/smyx-emacs-lisp-mode.png)
 
-### Elisp samples
-![](http://i.imgur.com/2GCChPM.png?1)
-
-![smyx](https://github.com/tacit7/smyx/raw/master/screenshots/smyx.png)
+### `org-mode`
+![smyx in org-mode](https://github.com/kaushalmodi/smyx/blob/master/screenshots/smyx-org-mode.png)
