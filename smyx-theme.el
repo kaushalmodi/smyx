@@ -70,7 +70,7 @@
        (smyx-bg+1             "#383838")
        (smyx-black-2          "#353535")
        (smyx-gray-5           "#333333")
-       (smyx-bg+2             "#484848")
+       (smyx-bg+2             "#505050")
        (smyx-gray-2           "#8b8989")
        (smyx-gray-9           "#8f8f8f")
        (smyx-gray-3           "#919191")
