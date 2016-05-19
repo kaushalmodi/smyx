@@ -631,15 +631,8 @@
    `(rst-level-6-face ((,class (:foreground ,smyck-green+0))))
 
 ;;; show-paren
-   `(show-paren-mismatch ((,class (:foreground ,smyck-red+1 :background ,smyck-gray-1))))
-   `(show-paren-match ((,class (:foreground ,smyck-gray-1 :background ,smyck-purple+1))))
-
-   `(naeu-green-face ((,class (:foreground ,smyck-green+1 :background ,smyck-gray-1))))
-   `(naeu-pink-face ((,class (:foreground ,smyck-purple+1 :background ,smyck-gray-1))))
-   `(naeu-blue-face ((,class (:foreground ,smyck-blue+0 :background ,smyck-gray-1))))
-   `(naeu-orange-face ((,class (:foreground ,smyx-yellow-1 :background ,smyck-gray-1))))
-   `(naeu-red-face ((,class (:foreground ,smyck-yellow+0 :background ,smyck-gray-1))))
-   `(naeu-grey-face ((,class (:foreground ,smyx-bg+2 :background ,smyck-gray-1))))
+   `(show-paren-mismatch ((,class (:foreground ,smyck-red+0 :strike-through t))))
+   `(show-paren-match ((,class (:foreground ,smyck-white+0 :weight bold))))
 
 ;;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,smyck-red+0))))
