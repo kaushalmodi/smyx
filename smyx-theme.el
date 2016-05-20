@@ -243,6 +243,9 @@
    `(bm-fringe-face            ((,class (:foreground ,smyck-white+0))))
    `(bm-fringe-persistent-face ((,class (:foreground ,smyck-yellow+1))))
 
+;;; calendar
+   `(calendar-today ((,class (:foreground ,smyck-red+0 :weight bold))))
+
 ;;; company-mode
    `(company-tooltip ((,class (:background ,smyx-gray-5 :foreground ,smyck-white+0))))
    `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,smyck-green+1))))
