@@ -240,7 +240,9 @@
    `(window-number-face ((,class (:background ,smyx-black+1 :foreground ,smyck-green+1))))
 
 ;;; bm
+   `(bm-face                   ((,class (:background ,smyck-white+0 :foreground ,smyck-black+0))))
    `(bm-fringe-face            ((,class (:foreground ,smyck-white+0))))
+   `(bm-persistent-face        ((,class (:background ,smyck-yellow+1 :foreground ,smyck-black+0))))
    `(bm-fringe-persistent-face ((,class (:foreground ,smyck-yellow+1))))
 
 ;;; calendar
