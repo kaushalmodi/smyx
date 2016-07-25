@@ -458,7 +458,7 @@
 
 ;;; linum-mode
    `(linum ((,class (:height 0.9 :foreground ,smyx-gray-9 :background ,smyx-bg))))
-   `(nlinum-plus-current-face ((,class (:inherit linum :foreground ,smyck-green+0 :background ,smyx-bg+1 :weight bold))))
+   `(nlinum-current-line ((,class (:inherit linum :foreground ,smyck-green+0 :background ,smyx-bg+1 :weight bold))))
 
 ;;; easy-escape-mode
    `(easy-escape-face ((,class (:height 1.0 :weight bold :background ,smyx-bg-1))))
