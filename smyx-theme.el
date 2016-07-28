@@ -677,16 +677,16 @@
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,smyck-purple+1 :background ,smyck-gray-1))))
 
 ;;; whitespace-mode
+   `(whitespace-trailing ((,class (:background ,smyx-bg :foreground ,smyck-red+0))))
+   `(whitespace-tab ((,class (:background ,smyx-bg+1 :foreground ,smyck-red+0))))
    `(whitespace-space ((,class (:background ,smyx-bg :foreground ,smyx-bg+1))))
    `(whitespace-hspace ((,class (:background ,smyx-bg :foreground ,smyx-bg+1))))
-   `(whitespace-tab ((,class (:background ,smyx-bg :foreground ,smyck-red+0))))
-   `(whitespace-newline ((,class (:foreground ,smyx-bg+1))))
-   `(whitespace-trailing ((,class (:foreground ,smyck-red+0 :background ,smyx-bg))))
-   `(whitespace-line ((,class (:background ,smyx-black+1 :foreground ,smyck-purple+0))))
    `(whitespace-space-before-tab ((,class (:background ,smyck-yellow+0 :foreground ,smyck-yellow+0))))
-   `(whitespace-indentation ((,class (:background ,smyx-yellow :foreground ,smyck-red+0))))
-   `(whitespace-empty ((,class (:background ,smyx-yellow :foreground ,smyck-red+0))))
    `(whitespace-space-after-tab ((,class (:background ,smyx-yellow :foreground ,smyck-red+0))))
+   `(whitespace-line ((,class (:background ,smyx-black+1 :foreground ,smyck-purple+0))))
+   `(whitespace-newline ((,class (:foreground ,smyx-bg+1))))
+   `(whitespace-empty ((,class (:background ,smyx-yellow :foreground ,smyck-red+0))))
+   `(whitespace-indentation ((,class (:background ,smyx-bg+1 :foreground ,smyck-red+0))))
 
 ;;; wanderlust
    `(wl-highlight-folder-few-face ((,class (:foreground ,smyck-red+0))))
