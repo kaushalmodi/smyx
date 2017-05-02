@@ -432,6 +432,11 @@
    `(ido-subdir ((,class (:foreground ,smyx-gray-4 :background ,smyck-gray-1))))
    `(ido-indicator ((,class (:foreground ,smyx-bg :background ,smyck-purple+1))))
 
+;;; ivy
+   ;; `ivy-highlight-face' is used by `counsel-describe-function' and
+   ;; `counsel-describe-variable'.
+   `(ivy-highlight-face ((,class (:foreground ,smyck-blue+1))))
+
 ;;; js2-mode
    `(js2-warning-face ((,class (:underline ,smyck-blue+1))))
    `(js2-error-face ((,class (:foreground ,smyck-red+0 :weight bold))))
