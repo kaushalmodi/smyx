@@ -645,6 +645,9 @@
    `(show-paren-mismatch ((,class (:foreground ,smyck-red+0 :strike-through t))))
    `(show-paren-match ((,class (:foreground ,smyck-white+0 :weight bold))))
 
+;;; shr / eww
+   `(shr-link ((,class (:inherit link :weight normal))))
+
 ;;; SLIME
    `(slime-repl-inputed-output-face ((,class (:foreground ,smyck-red+0))))
 
