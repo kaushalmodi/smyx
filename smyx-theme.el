@@ -461,9 +461,14 @@
    `(jabber-title-medium ((,class (:height 1.2 :weight bold))))
    `(jabber-title-large ((,class (:height 1.3 :weight bold))))
 
-;;; linum-mode
-   `(linum ((,class (:height 0.9 :foreground ,smyx-gray-9 :background ,smyx-bg))))
-   `(nlinum-current-line ((,class (:inherit linum :foreground ,smyck-green+0 :background ,smyx-bg+1 :weight bold))))
+;;; Line numbers
+;;;; line-number (Native line number display in emacs 26+)
+   `(line-number ((,class (:height 0.9 :foreground ,smyx-gray-9 :background ,smyx-bg))))
+   `(line-number-current-line ((,class (:inherit line-number :foreground ,smyck-green+0 :background ,smyx-bg+1 :weight bold))))
+;;;; linum
+   `(linum ((,class (:inherit line-number))))
+;;;; nlinum
+   `(nlinum-current-line ((,class (:inherit line-number-current-line))))
 
 ;;; easy-escape-mode
    `(easy-escape-face ((,class (:height 1.0 :weight bold :background ,smyx-bg-1))))
