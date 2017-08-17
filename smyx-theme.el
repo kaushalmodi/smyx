@@ -463,7 +463,7 @@
 
 ;;; Line numbers
 ;;;; line-number (Native line number display in emacs 26+)
-   `(line-number ((,class (:height 0.9 :foreground ,smyx-gray-9 :background ,smyx-bg))))
+   `(line-number ((,class (:foreground ,smyx-gray-9 :background ,smyx-bg))))
    `(line-number-current-line ((,class (:inherit line-number :foreground ,smyck-green+0 :background ,smyx-bg+1 :weight bold))))
 ;;;; linum
    `(linum ((,class (:inherit line-number))))
