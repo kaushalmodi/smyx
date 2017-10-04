@@ -103,6 +103,8 @@
    `(cursor ((,class (:background ,smyx-fg))))
    `(escape-glyph-face ((,class (:foreground ,smyck-red+0))))
    `(fringe ((,class (:foreground ,smyx-fg :background ,smyx-bg))))
+   ;; https://debbugs.gnu.org/cgi/bugreport.cgi?bug=27830#20
+   `(window-divider ((,class (:foreground ,smyx-bg-1))))
    `(header-line ((,class (:foreground ,smyx-yellow
                            :background ,smyx-bg-1
                            :box (:line-width -1 :style released-button)))))
