@@ -691,6 +691,13 @@
 
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,smyck-purple+1 :background ,smyck-gray-1))))
 
+;;; web-mode
+   `(web-mode-type-face ((,class (:inherit font-lock-type-face))))
+   `(web-mode-keyword-face ((,class (:inherit font-lock-keyword-face))))
+   `(web-mode-function-call-face ((,class (:inherit font-lock-keyword-face))))
+   `(web-mode-variable-name-face ((,class (:inherit font-lock-variable-name-face))))
+   `(web-mode-filter-face ((,class (:inherit default))))
+
 ;;; whitespace-mode
    `(whitespace-trailing ((,class (:background ,smyx-bg :foreground ,smyck-red+0))))
    `(whitespace-tab ((,class (:background ,smyx-bg+1 :foreground ,smyck-red+0))))
