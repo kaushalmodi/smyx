@@ -261,6 +261,9 @@
    `(company-scrollbar-bg ((,class (:background ,smyx-gray-3))))
    `(company-preview ((,class (:foreground ,smyx-gray-2 :background ,smyck-purple+1))))
 
+;;; deadgrep
+   `(deadgrep-filename-face ((,class (:foreground ,smyck-yellow+1 :weight normal))))
+
 ;;; deft
    `(deft-title-face ((,class (:foreground ,smyck-red+0 :weight bold))))
 
