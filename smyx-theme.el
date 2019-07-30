@@ -776,7 +776,8 @@
    `(ansi-color-names-vector [,smyx-bg ,smyck-red+0 ,smyck-green+1 ,smyck-yellow+0
                                        ,smyck-blue+0 ,smyx-red+1 ,smyck-blue+1 ,smyx-fg])
    ;; fill-column-indicator
-   `(fci-rule-color ,smyck-gray+0)))
+   `(fill-column-indicator ((,class (:foreground ,smyck-black+0))))
+   ))
 
 ;;;###autoload
 (when load-file-name
