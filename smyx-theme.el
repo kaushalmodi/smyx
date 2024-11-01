@@ -109,12 +109,12 @@
                            :background ,smyx-bg-1
                            :box (:line-width -1 :style released-button)))))
 
-   `(region ((,class (:background ,smyx-bg+2))))
+   `(region ((,class (:background ,smyx-bg+2 :extend t)))) ;emacs 27.x
    `(highlight ((,class (:background ,smyx-bg+2))))
    `(match ((,class (:foreground ,smyck-red+0 :weight bold))))
 
 ;;; highlight current line
-   `(hl-line ((,class (:background ,smyx-bg+2))))
+   `(hl-line ((,class (:background ,smyx-bg+2 :extend t)))) ;emacs 27.x
 
 ;;; stripe-buffer
    `(stripe-highlight ((,class (:background ,smyx-bg-1))))
@@ -145,7 +145,7 @@
    `(isearch ((,class (:weight bold :foreground ,smyck-black+0 :background ,smyck-green+0))))
    `(lazy-highlight ((,class (:foreground ,smyck-black+0 :background ,smyck-yellow+1))))
    `(isearch-fail ((,class (:foreground ,smyck-gray-1 :background ,smyck-red+1))))
-   `(query-replace ((,class (:weight bold :foreground nil :background ,smyck-blue+1))))
+   `(query-replace ((,class (:weight bold :foreground unspecified :background ,smyck-blue+1))))
    `(Highline-face ((,class (:background ,smyck-green+1))))
    `(italic ((,class (nil))))
    `(left-margin ((,class (nil))))
@@ -181,7 +181,7 @@
    `(font-lock-string-face ((,class (:foreground ,smyck-red+0))))
    `(font-lock-type-face ((,class (:foreground ,smyck-blue+1))))
 
-   `(font-lock-variable-name-face ((,class (:foreground ,smyck-blue+1))))
+   `(font-lock-variable-name-face ((,class (:foreground ,smyck-yellow+0))))
    `(font-lock-warning-face ((,class (:weight bold :foreground "red"))))
    `(font-lock-reference-face ((,class (:foreground ,smyck-gray+1))))
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,smyx-yellow))))
@@ -424,7 +424,7 @@
 
 ;;; hl-line-mode
    `(hl-sexp-face ((,class (:background ,smyx-gray-5))))
-   `(hl-line-face ((,class (:background ,smyx-gray-5))))
+   `(hl-line-face ((,class (:inherit hl-line :background ,smyx-gray-5))))
 
 ;;; Info-mode
    `(Info-quoted ((,class (:foreground ,smyck-gray+1))))
@@ -573,7 +573,7 @@
                             :box (:line-width 1 :style released-button)))))
    `(org-date ((,class (:foreground ,smyck-green+1))))
    `(org-done ((,class (:foreground ,smyck-green+0 :weight bold
-                        :box (:line-width 1 :style none)))))
+                        :box (:line-width 1)))))
    `(org-todo ((,class (:foreground ,smyck-red+0 :weight bold))))
 
    `(org-level-1 ((,class (:foreground ,smyck-blue+1 :weight bold))))
@@ -587,9 +587,9 @@
 
    `(org-link ((,class (:foreground ,smyck-blue+0 :underline t))))
    `(org-tag ((,class (:bold t :weight bold))))
-   `(org-column ((,class (:background ,smyx-yellow :foreground ,smyck-gray-1))))
+   `(org-column ((,class (:background ,smyx-bg+1 :foreground ,smyck-gray-1))))
    `(org-column-title ((,class (:background ,smyx-bg-1 :weight bold))))
-   `(org-block ((,class (:foreground ,smyx-fg :background ,smyx-black+1))))
+   `(org-block ((,class (:foreground ,smyx-fg :background ,smyx-black+1)))) ;emacs 27.x
    `(org-block-begin-line
      ((,class (:foreground "#008ED1" :background ,smyx-bg-1))))
    `(org-block-background ((,class (:background ,smyx-black+1))))
